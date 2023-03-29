@@ -6,7 +6,7 @@ const func = (num) => {
     for (let i = 0; i <= num; i++) {
         result.push(Math.floor((Math.random() * 100)))
     }
-    return result
+    return result.sort((a, b) => a - b)
 }
 
 console.log(func(5))
